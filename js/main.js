@@ -50,6 +50,18 @@ const SAMPLE_SERIES = {
   },
 };
 
+function initLoopingVideos() {
+  document.querySelectorAll('video').forEach(video => {
+    video.loop = true;
+    video.setAttribute('loop', '');
+
+    video.addEventListener('ended', () => {
+      video.currentTime = 0;
+      video.play().catch(() => {});
+    });
+  });
+}
+
 // One static combined chart for a single joint, overlaying Video A vs Video B
 function initCombinedJointChart(canvasId, seriesA, seriesB) {
   const canvas = document.getElementById(canvasId);
@@ -102,6 +114,8 @@ function initSyncButton(btnId, videoIdA, videoIdB) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  initLoopingVideos();
+
   // Movement 1
   initSyncButton('m1LongSyncBtn', 'm1LongA', 'm1LongB');
   initSyncButton('m1StepSyncBtn', 'm1StepA', 'm1StepB');
