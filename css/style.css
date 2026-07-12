@@ -293,6 +293,7 @@ button.sync-btn .dot{
 
 /* ---------- Footer ---------- */
 footer{
+  margin-top: 48px;
   padding: 48px 0 90px;
   font-family: 'IBM Plex Mono', monospace;
   font-size: 12.5px;
