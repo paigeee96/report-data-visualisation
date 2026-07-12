@@ -242,12 +242,24 @@ button.sync-btn .dot{
 .single-figure-panel{
   padding: 16px;
   margin-top: 0;
+  overflow: hidden;
 }
-.movement-figure{
+.single-figure-panel .movement-figure{
   display: block;
   width: 100%;
   height: auto;
   border-radius: 8px;
+}
+.single-figure-panel .label{
+  padding: 12px 16px;
+  border-top: 1px solid var(--rule);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+  white-space: nowrap;
+  overflow-x: auto;
 }
 .legend-chip{
   display: inline-flex;
