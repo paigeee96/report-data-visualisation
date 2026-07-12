@@ -111,7 +111,8 @@ section:last-of-type{ border-bottom: none; }
 
 /* add extra vertical space between consecutive sections */
 section + section{
-  margin-top: 40px;
+  margin-top: 56px;
+  padding-top: 64px;
 }
 
 h2.fig-title{
