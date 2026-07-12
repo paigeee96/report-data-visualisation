@@ -240,7 +240,7 @@ button.sync-btn .dot{
 
 /* ---------- Single figure panel per movement ---------- */
 .single-figure-panel{
-  padding: 16px;
+  padding: 0;
   margin-top: 0;
   overflow: hidden;
 }
@@ -248,7 +248,7 @@ button.sync-btn .dot{
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 8px;
+  background: #000;
 }
 .single-figure-panel .label{
   padding: 12px 16px;
