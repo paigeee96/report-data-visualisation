@@ -24,6 +24,7 @@ html{ scroll-behavior: smooth; }
 
 body{
   margin: 0;
+  padding-bottom: 96px;
   background:
     linear-gradient(var(--paper), var(--paper)),
     repeating-linear-gradient(0deg, transparent, transparent 27px, #00000009 27px, #00000009 28px),
@@ -103,14 +104,14 @@ header.hero p.dek{
 
 /* ---------- Section shells ---------- */
 section{
-  padding: 140px 0;
+  padding: 92px 0 88px;
   border-bottom: 1px solid var(--rule);
 }
 section:last-of-type{ border-bottom: none; }
 
 /* add extra vertical space between consecutive sections */
 section + section{
-  margin-top: 32px;
+  margin-top: 40px;
 }
 
 h2.fig-title{
