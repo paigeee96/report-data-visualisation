@@ -155,6 +155,8 @@ p.fig-note{
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--ink-soft);
+  white-space: nowrap;
+  overflow-x: auto;
 }
 .transport{
   display: flex;
