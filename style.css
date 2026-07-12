@@ -247,10 +247,12 @@ button.sync-btn .dot{
   white-space: nowrap;
   overflow-x: auto;
 }
+.single-figure-panel{ overflow: hidden; margin-bottom: 44px; }
+.single-figure-panel img{
+  width: 100%;
+  display: block;
+}
 .single-figure-panel .label{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding: 12px 16px;
   border-top: 1px solid var(--rule);
   font-family: 'IBM Plex Mono', monospace;
@@ -258,8 +260,7 @@ button.sync-btn .dot{
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--ink-soft);
-  white-space: nowrap;
-  overflow-x: auto;
+}
 }
 .combined-intro{
   margin: 34px 0 14px;
