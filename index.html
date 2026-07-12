@@ -42,26 +42,8 @@
       <div class="label"><span>Movement 1 — trimmed, with angle overlay</span></div>
     </div>
 
-    <div class="combined-intro">
-      <h3>Movement 1 — hip, knee, ankle: NI vs Para</h3>
-      <div>
-        <span class="legend-chip"><span class="sw" style="background:#0E7C7B;"></span>NI</span>
-        <span class="legend-chip"><span class="sw" style="background:#D6572D;"></span>Para</span>
-      </div>
-    </div>
-    <div class="combined-grid">
-      <div class="panel combined-joint-panel">
-        <div class="joint-title">Hip</div>
-        <div class="combined-chart-holder"><canvas id="m1Combined_hip"></canvas></div>
-      </div>
-      <div class="panel combined-joint-panel">
-        <div class="joint-title">Knee</div>
-        <div class="combined-chart-holder"><canvas id="m1Combined_knee"></canvas></div>
-      </div>
-      <div class="panel combined-joint-panel">
-        <div class="joint-title">Ankle</div>
-        <div class="combined-chart-holder"><canvas id="m1Combined_ankle"></canvas></div>
-      </div>
+    <div class="panel single-figure-panel">
+      <img src="figures/m1-figure.png" alt="Movement 1 figure" class="movement-figure">
     </div>
   </div>
 </section>
@@ -89,33 +71,15 @@
       <div class="label"><span>Movement 2 — trimmed, with angle overlay</span></div>
     </div>
 
-    <div class="combined-intro">
-      <h3>Movement 2 — hip, knee, ankle: NI vs Para</h3>
-      <div>
-        <span class="legend-chip"><span class="sw" style="background:#0E7C7B;"></span>NI</span>
-        <span class="legend-chip"><span class="sw" style="background:#D6572D;"></span>Para</span>
-      </div>
-    </div>
-    <div class="combined-grid">
-      <div class="panel combined-joint-panel">
-        <div class="joint-title">Hip</div>
-        <div class="combined-chart-holder"><canvas id="m2Combined_hip"></canvas></div>
-      </div>
-      <div class="panel combined-joint-panel">
-        <div class="joint-title">Knee</div>
-        <div class="combined-chart-holder"><canvas id="m2Combined_knee"></canvas></div>
-      </div>
-      <div class="panel combined-joint-panel">
-        <div class="joint-title">Ankle</div>
-        <div class="combined-chart-holder"><canvas id="m2Combined_ankle"></canvas></div>
-      </div>
+    <div class="panel single-figure-panel">
+      <img src="figures/m2-figure.png" alt="Movement 2 figure" class="movement-figure">
     </div>
   </div>
 </section>
 
 <section class="wrap">
   <div class="setup-note">
-    <strong>Still placeholder:</strong> the hip/knee/ankle comparison charts below are randomly generated sample curves. Once you have your real joint-angle data ready, see <code>README.md</code> for where to plug it into <code>js/main.js</code>.
+    <strong>Figure update:</strong> each movement now uses a single static figure image. Swap the image file in the relevant <code>img</code> tag if you want to change the figure.
   </div>
 </section>
 
@@ -123,7 +87,6 @@
   Built as a static scaffold — no backend required. Push this folder to a GitHub repo, enable Pages in Settings → Pages → Deploy from branch, and it's live.
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
