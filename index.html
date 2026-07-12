@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Field Notes — Research Report</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="hero wrap">
+  <div class="eyebrow">Research Report — Working Draft</div>
+  <h1>Watching the data <em>move</em> with the footage.</h1>
+  <p class="dek">Two movements, each shown three ways: the full trial (NI and Para side by side in-frame), a trimmed clip with angle graph overlay, then a static hip/knee/ankle comparison.</p>
+  <div class="meta-row">
+    <span><b>Format —</b> static site, GitHub Pages ready</span>
+    <span><b>Charting —</b> Chart.js (CDN), for the comparison panel only</span>
+    <span><b>Video —</b> NI/Para pre-combined side by side in each clip</span>
+  </div>
+</header>
+
+<section class="wrap" id="movement-1">
+  <div class="movement">
+    <div class="movement-heading">
+      <span class="num">Movement 1</span>
+      <h2 class="fig-title" style="margin:0;">Name of movement 1</h2>
+    </div>
+
+    <p class="fig-note">Full-length trial — NI and Para participants side by side.</p>
+    <div class="panel single-video-panel">
+      <video id="m1Full" controls muted playsinline>
+        <source src="videos/m1-full.mp4" type="video/mp4">
+      </video>
+      <div class="label"><span>Movement 1 — full length trial</span></div>
+    </div>
+
+    <p class="fig-note">Trimmed clip with joint-angle graph overlay — NI and Para side by side.</p>
+    <div class="panel single-video-panel">
+      <video id="m1Step" controls muted playsinline>
+        <source src="videos/m1-step.mp4" type="video/mp4">
+      </video>
+      <div class="label"><span>Movement 1 — trimmed, with angle overlay</span></div>
+    </div>
+
+    <div class="combined-intro">
+      <h3>Movement 1 — hip, knee, ankle: NI vs Para</h3>
+      <div>
+        <span class="legend-chip"><span class="sw" style="background:#0E7C7B;"></span>NI</span>
+        <span class="legend-chip"><span class="sw" style="background:#D6572D;"></span>Para</span>
+      </div>
+    </div>
+    <div class="combined-grid">
+      <div class="panel combined-joint-panel">
+        <div class="joint-title">Hip</div>
+        <div class="combined-chart-holder"><canvas id="m1Combined_hip"></canvas></div>
+      </div>
+      <div class="panel combined-joint-panel">
+        <div class="joint-title">Knee</div>
+        <div class="combined-chart-holder"><canvas id="m1Combined_knee"></canvas></div>
+      </div>
+      <div class="panel combined-joint-panel">
+        <div class="joint-title">Ankle</div>
+        <div class="combined-chart-holder"><canvas id="m1Combined_ankle"></canvas></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap" id="movement-2">
+  <div class="movement">
+    <div class="movement-heading">
+      <span class="num">Movement 2</span>
+      <h2 class="fig-title" style="margin:0;">Name of movement 2</h2>
+    </div>
+
+    <p class="fig-note">Full-length trial — NI and Para participants side by side.</p>
+    <div class="panel single-video-panel">
+      <video id="m2Full" controls muted playsinline>
+        <source src="videos/m2-full.mp4" type="video/mp4">
+      </video>
+      <div class="label"><span>Movement 2 — full length trial</span></div>
+    </div>
+
+    <p class="fig-note">Trimmed clip with joint-angle graph overlay — NI and Para side by side.</p>
+    <div class="panel single-video-panel">
+      <video id="m2Step" controls muted playsinline>
+        <source src="videos/m2-step.mp4" type="video/mp4">
+      </video>
+      <div class="label"><span>Movement 2 — trimmed, with angle overlay</span></div>
+    </div>
+
+    <div class="combined-intro">
+      <h3>Movement 2 — hip, knee, ankle: NI vs Para</h3>
+      <div>
+        <span class="legend-chip"><span class="sw" style="background:#0E7C7B;"></span>NI</span>
+        <span class="legend-chip"><span class="sw" style="background:#D6572D;"></span>Para</span>
+      </div>
+    </div>
+    <div class="combined-grid">
+      <div class="panel combined-joint-panel">
+        <div class="joint-title">Hip</div>
+        <div class="combined-chart-holder"><canvas id="m2Combined_hip"></canvas></div>
+      </div>
+      <div class="panel combined-joint-panel">
+        <div class="joint-title">Knee</div>
+        <div class="combined-chart-holder"><canvas id="m2Combined_knee"></canvas></div>
+      </div>
+      <div class="panel combined-joint-panel">
+        <div class="joint-title">Ankle</div>
+        <div class="combined-chart-holder"><canvas id="m2Combined_ankle"></canvas></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="setup-note">
+    <strong>Still placeholder:</strong> the hip/knee/ankle comparison charts below are randomly generated sample curves. Once you have your real joint-angle data ready, see <code>README.md</code> for where to plug it into <code>js/main.js</code>.
+  </div>
+</section>
+
+<footer class="wrap">
+  Built as a static scaffold — no backend required. Push this folder to a GitHub repo, enable Pages in Settings → Pages → Deploy from branch, and it's live.
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
