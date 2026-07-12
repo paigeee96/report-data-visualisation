@@ -111,7 +111,7 @@ section:last-of-type{ border-bottom: none; }
 
 /* add extra vertical space between consecutive sections */
 section + section{
-  margin-top: 40px;
+  margin-top: 56px;
 }
 
 h2.fig-title{
@@ -219,7 +219,7 @@ button.sync-btn .dot{
 
 /* ---------- Movement section wrapper ---------- */
 .movement{
-  margin-bottom: 56px;
+  margin-bottom: 72px;
 }
 .movement:last-child{ margin-bottom: 0; }
 .movement-heading{
