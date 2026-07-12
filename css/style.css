@@ -108,6 +108,11 @@ section{
 }
 section:last-of-type{ border-bottom: none; }
 
+/* add extra vertical space between consecutive sections */
+section + section{
+  margin-top: 32px;
+}
+
 h2.fig-title{
   font-family: 'Fraunces', serif;
   font-weight: 600;
