@@ -213,7 +213,6 @@ button.sync-btn .dot{
 .movement{
   margin-bottom: 56px;
 }
-.movement:last-child{ margin-bottom: 0; }
 .movement-heading{
   display: flex;
   align-items: baseline;
@@ -326,7 +325,20 @@ button.sync-btn .dot{
   width: 12px; height: 2px; background: var(--signal);
   display: inline-block;
 }
-
+.single-figure-panel{ overflow: hidden; margin-bottom: 44px; }
+.single-figure-panel img{
+  width: 100%;
+  display: block;
+}
+.single-figure-panel .label{
+  padding: 12px 16px;
+  border-top: 1px solid var(--rule);
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+}
 /* ---------- Footer ---------- */
 footer{
   padding: 48px 0 90px;
