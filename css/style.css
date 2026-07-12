@@ -69,7 +69,7 @@ a{ color: var(--signal); }
 
 /* ---------- Header / hero ---------- */
 header.hero{
-  padding: 96px 0 64px;
+  padding: 96px 0 40px;
   border-bottom: 1px solid var(--rule);
 }
 header.hero h1{
@@ -111,7 +111,7 @@ section:last-of-type{ border-bottom: none; }
 
 /* add extra vertical space between consecutive sections */
 section + section{
-  margin-top: 56px;
+  margin-top: 40px;
 }
 
 h2.fig-title{
