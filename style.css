@@ -58,7 +58,8 @@ a{ color: var(--signal); }
   gap: 10px;
   margin-bottom: 14px;
 }
-.eyebrow::before{
+.eyebrow::before,
+.eyebrow::after{
   content: "";
   width: 22px; height: 1px;
   background: var(--signal);
