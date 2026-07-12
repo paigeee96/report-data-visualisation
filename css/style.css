@@ -102,7 +102,7 @@ header.hero p.dek{
 
 /* ---------- Section shells ---------- */
 section{
-  padding: 72px 0;
+  padding: 96px 0;
   border-bottom: 1px solid var(--rule);
 }
 section:last-of-type{ border-bottom: none; }
