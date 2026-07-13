@@ -246,6 +246,7 @@ button.sync-btn .dot{
   color: var(--ink-soft);
   white-space: nowrap;
   overflow-x: auto;
+  display: block;
 }
 .single-figure-panel{ overflow: hidden; margin-bottom: 44px; }
 .single-figure-panel img{
@@ -263,6 +264,7 @@ button.sync-btn .dot{
   color: var(--ink-soft);
   white-space: nowrap;
   overflow-x: auto;
+  display: block;
 }
 
 @media (max-width: 860px){
