@@ -260,6 +260,8 @@ button.sync-btn .dot{
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--ink-soft);
+  white-space: nowrap;
+  overflow-x: auto;
 }
 .combined-intro{
   margin: 34px 0 14px;
