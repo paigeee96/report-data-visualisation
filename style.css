@@ -119,6 +119,7 @@ p.fig-note{
   max-width: 62ch;
   margin: 0 0 18px;
   font-size: 15.5px;
+  white-space: nowrap;
 }
 
 /* ---------- Panels (video / chart containers) ---------- */
