@@ -78,7 +78,7 @@ header.hero h1{
   line-height: 1.04;
   letter-spacing: -0.01em;
   margin: 0 0 20px;
-  max-width: 15ch;
+  max-width: 18ch;
 }
 header.hero h1 em{
   font-style: italic;
@@ -88,7 +88,7 @@ header.hero h1 em{
 header.hero p.dek{
   font-size: 19px;
   color: var(--ink-soft);
-  max-width: 58ch;
+  max-width: 100%;
   margin: 0 0 30px;
 }
 .meta-row{
@@ -116,7 +116,7 @@ h2.fig-title{
 }
 p.fig-note{
   color: var(--ink-soft);
-  max-width: 62ch;
+  max-width: 100%;
   margin: 0 0 18px;
   font-size: 15.5px;
   white-space: nowrap;
